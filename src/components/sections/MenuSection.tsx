@@ -64,14 +64,13 @@ export default function MenuSection() {
           ))}
         </div>
 
-        {/* Menu Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredMenu.map((item) => (
             <Card
               key={item.id}
-              className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow group"
+              className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow group flex flex-col p-0 gap-0"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.name}
@@ -79,22 +78,21 @@ export default function MenuSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex-grow">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold">{item.name}</h3>
                 </div>
-                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                <p className="text-gray-600 text-sm line-clamp-2">
                   {item.description}
                 </p>
               </CardContent>
-              <CardFooter className="p-6 pt-0 flex justify-between items-center">
+              <CardFooter className="p-6 pt-0 flex justify-between items-center border-none bg-transparent">
                 <span className="text-orange-600 font-bold text-lg">
                   {formatPrice(item.price)}
                 </span>
                 <Button
                   size="sm"
-                  variant="ghost"
-                  className="text-orange-600 hover:text-orange-700 hover:bg-orange-50 p-0"
+                  className="bg-orange-600 hover:bg-orange-700 text-white"
                   asChild
                 >
                   <a
