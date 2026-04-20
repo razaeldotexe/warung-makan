@@ -10,9 +10,11 @@ export default function ContactSection() {
             <Badge className="mb-4 bg-orange-600 text-white hover:bg-orange-600 border-none">
               Hubungi Kami
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Kunjungi Warung Kami</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              Kunjungi Warung Kami
+            </h2>
             <p className="text-gray-400 mb-12 text-lg">
-              Kami berlokasi di pusat kota dengan akses mudah dan parkir luas. 
+              Kami berlokasi di pusat kota dengan akses mudah dan parkir luas.
               Datang dan nikmati hidangan hangat langsung dari dapur kami.
             </p>
 
@@ -23,7 +25,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl mb-1">Alamat</h4>
-                  <p className="text-gray-400">Jl. Nusantara No. 123, Jakarta Selatan, Indonesia</p>
+                  <p className="text-gray-400">
+                    Jl. Nusantara No. 123, Jakarta Selatan, Indonesia
+                  </p>
                 </div>
               </div>
 
@@ -43,16 +47,24 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl mb-1">Jam Buka</h4>
-                  <p className="text-gray-400">Senin - Minggu: 10:00 - 22:00 WIB</p>
+                  <p className="text-gray-400">
+                    Senin - Minggu: 10:00 - 22:00 WIB
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-12 flex gap-4">
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-orange-600 transition-colors">
+              <a
+                href="#"
+                className="bg-white/10 p-3 rounded-full hover:bg-orange-600 transition-colors"
+              >
                 <Phone size={20} />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-orange-600 transition-colors">
+              <a
+                href="#"
+                className="bg-white/10 p-3 rounded-full hover:bg-orange-600 transition-colors"
+              >
                 <Clock size={20} />
               </a>
             </div>
@@ -64,7 +76,9 @@ export default function ContactSection() {
               <div>
                 <MapPin size={48} className="mx-auto mb-4 opacity-20" />
                 <p>Google Maps akan tampil di sini</p>
-                <p className="text-sm opacity-50 mt-2">(Hubungkan API Key untuk mengaktifkan peta asli)</p>
+                <p className="text-sm opacity-50 mt-2">
+                  (Hubungkan API Key untuk mengaktifkan peta asli)
+                </p>
               </div>
             </div>
             {/* For a real map, you would use an iframe or a library like react-google-maps */}
@@ -77,7 +91,7 @@ export default function ContactSection() {
             ></iframe>
           </div>
         </div>
-        
+
         <div className="mt-24 pt-12 border-t border-white/10 text-center text-gray-500 text-sm">
           <p>© 2024 Warung Makan Indonesia. All rights reserved.</p>
         </div>

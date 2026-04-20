@@ -18,7 +18,9 @@ export default function GallerySection() {
           <Badge className="mb-4 bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
             Galeri
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Suasana Warung Kami</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Suasana Warung Kami
+          </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
             Abadikan momen kebersamaan Anda saat menikmati hidangan kami.
           </p>
@@ -26,7 +28,10 @@ export default function GallerySection() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, index) => (
-            <div key={index} className="relative aspect-square overflow-hidden group">
+            <div
+              key={index}
+              className="relative aspect-square overflow-hidden group"
+            >
               <Image
                 src={src}
                 alt={`Galeri ${index + 1}`}

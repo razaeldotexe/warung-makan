@@ -18,7 +18,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"
+        isScrolled
+          ? "bg-white/80 backdrop-blur-md shadow-sm py-3"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -26,16 +28,28 @@ export default function Navbar() {
           Warung<span className="text-gray-900">Makan</span>
         </Link>
         <div className="hidden md:flex space-x-8 items-center">
-          <Link href="#hero" className="text-sm font-medium hover:text-orange-600 transition-colors">
+          <Link
+            href="#hero"
+            className="text-sm font-medium hover:text-orange-600 transition-colors"
+          >
             Beranda
           </Link>
-          <Link href="#menu" className="text-sm font-medium hover:text-orange-600 transition-colors">
+          <Link
+            href="#menu"
+            className="text-sm font-medium hover:text-orange-600 transition-colors"
+          >
             Menu
           </Link>
-          <Link href="#gallery" className="text-sm font-medium hover:text-orange-600 transition-colors">
+          <Link
+            href="#gallery"
+            className="text-sm font-medium hover:text-orange-600 transition-colors"
+          >
             Galeri
           </Link>
-          <Link href="#contact" className="text-sm font-medium hover:text-orange-600 transition-colors">
+          <Link
+            href="#contact"
+            className="text-sm font-medium hover:text-orange-600 transition-colors"
+          >
             Kontak
           </Link>
           <Button asChild className="bg-orange-600 hover:bg-orange-700">
