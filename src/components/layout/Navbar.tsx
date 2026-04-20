@@ -32,7 +32,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:flex space-x-8 items-center">
           <Link
-            href="#hero"
+            href="/"
             className={`text-sm font-semibold transition-colors hover:text-orange-500 ${
               isScrolled ? "text-gray-700" : "text-white"
             }`}
@@ -40,7 +40,7 @@ export default function Navbar() {
             Beranda
           </Link>
           <Link
-            href="#menu"
+            href="/menu"
             className={`text-sm font-semibold transition-colors hover:text-orange-500 ${
               isScrolled ? "text-gray-700" : "text-white"
             }`}
@@ -48,7 +48,7 @@ export default function Navbar() {
             Menu
           </Link>
           <Link
-            href="#gallery"
+            href="/#gallery"
             className={`text-sm font-semibold transition-colors hover:text-orange-500 ${
               isScrolled ? "text-gray-700" : "text-white"
             }`}
@@ -56,7 +56,7 @@ export default function Navbar() {
             Galeri
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className={`text-sm font-semibold transition-colors hover:text-orange-500 ${
               isScrolled ? "text-gray-700" : "text-white"
             }`}

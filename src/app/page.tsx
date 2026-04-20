@@ -9,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <MenuSection />
+      <MenuSection limit={4} />
       <GallerySection />
       <ContactSection />
     </main>
