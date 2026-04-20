@@ -22,7 +22,7 @@ export const menuData: MenuItem[] = [
     description: "10 tusuk sate ayam dengan bumbu kacang kental dan lontong.",
     price: 30000,
     category: "makanan",
-    image: "https://images.unsplash.com/photo-1529692236671-f1f6e9460272?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "m3",
@@ -30,7 +30,7 @@ export const menuData: MenuItem[] = [
     description: "Daging sapi empuk dimasak dengan bumbu rempah tradisional berjam-jam.",
     price: 45000,
     category: "makanan",
-    image: "https://images.unsplash.com/photo-1626808642875-0aa545452fe8?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1626808642822-395310f75d45?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "m4",
