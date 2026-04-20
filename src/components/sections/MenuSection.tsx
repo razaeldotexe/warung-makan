@@ -5,6 +5,7 @@ import { menuData } from "@/data/menu";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const categories = [
   { id: "semua", label: "Semua" },
@@ -60,10 +61,11 @@ export default function MenuSection() {
           {filteredMenu.map((item) => (
             <Card key={item.id} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow group">
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <CardContent className="p-6">

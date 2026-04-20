@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 const images = [
   "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800&auto=format&fit=crop",
@@ -26,10 +27,11 @@ export default function GallerySection() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, index) => (
             <div key={index} className="relative aspect-square overflow-hidden group">
-              <img
+              <Image
                 src={src}
                 alt={`Galeri ${index + 1}`}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
