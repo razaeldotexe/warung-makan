@@ -30,18 +30,15 @@ export default function Hero() {
             Nikmati kelezatan masakan tradisional Indonesia yang dimasak dengan
             resep warisan dan bahan-bahan segar pilihan setiap harinya.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <Button
-              size="lg"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8"
+              className="bg-orange-600 hover:bg-orange-700 text-white h-14 px-10 text-lg font-bold shadow-xl shadow-orange-600/30 rounded-xl transition-all hover:scale-105 active:scale-95"
               asChild
             >
               <Link href="#menu">Lihat Menu</Link>
             </Button>
             <Button
-              size="lg"
-              variant="outline"
-              className="text-white border-white hover:bg-white hover:text-black px-8"
+              className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white hover:text-orange-600 h-14 px-10 text-lg font-bold rounded-xl transition-all hover:scale-105 active:scale-95"
               asChild
             >
               <Link href="#contact">Lokasi Kami</Link>

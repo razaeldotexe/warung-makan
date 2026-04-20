@@ -87,12 +87,11 @@ export default function MenuSection() {
                 </p>
               </CardContent>
               <CardFooter className="p-6 pt-0 flex justify-between items-center border-none bg-transparent">
-                <span className="text-orange-600 font-bold text-lg">
+                <span className="text-orange-600 font-extrabold text-xl">
                   {formatPrice(item.price)}
                 </span>
                 <Button
-                  size="sm"
-                  className="bg-orange-600 hover:bg-orange-700 text-white"
+                  className="bg-orange-600 hover:bg-orange-700 text-white font-bold h-10 px-5 rounded-lg shadow-md shadow-orange-600/20 transition-all hover:scale-105"
                   asChild
                 >
                   <a
